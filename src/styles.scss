@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./variables";
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  color: #3d3d3d;
+  font-size: 0.825rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 1rem;
+  }
+}
+
+section {
+  padding: 2rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+.text-right {
+  text-align: right;
+}
+
+.btn {
+  background: white;
+  border: 2px solid;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  font-size: 1rem;
+  &__primary {
+    background: linear-gradient(
+      270deg,
+      #258c45 0%,
+      #2b8c49 10.59%,
+      #82c482 54.73%,
+      #b3d744 85.48%,
+      #c6de2c 100%
+    );
+    border-color: transparent;
+    // border: none;
+    color: $white;
+    &:hover {
+      background: $white;
+      color: $primary;
+      border: 2px solid;
+      border-color: $primary;
+    }
+    &--outline {
+      background: $white;
+      color: $primary;
+      border-color: $primary;
+      &:hover {
+        background: linear-gradient(
+          270deg,
+          #258c45 0%,
+          #2b8c49 10.59%,
+          #82c482 54.73%,
+          #b3d744 85.48%,
+          #c6de2c 100%
+        );
+        color: $white;
+        // border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+section {
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing {
+  text-align: center;
+
+  h1 {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    button {
+      width: 48%;
+    }
+  }
+  &__images {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      width: 100%;
+      &:first-child {
+        display: none;
+        @media screen and (min-width: 567px) {
+          display: unset;
+        }
+      }
+      @media screen and (min-width: 567px) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.layer {
+  margin-top: 3rem;
+  &__flex {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    @media screen and (min-width: 568px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__div {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    img {
+      height: 60px;
+    }
+    @media screen and (min-width: 568px) {
+      flex: 1 0 33.33%;
+      width: 33.33%;
+      margin: unset;
+    }
+    h5 {
+      margin-bottom: 0.825rem;
+    }
+  }
+}
+
+.work {
+  max-width: 800px;
+  & > h3 {
+    @media screen and (min-width: 1084px) {
+      margin-left: -100px;
+    }
+  }
+  &-div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 4rem;
+    &:nth-child(2) {
+      position: relative;
+      @media screen and (min-width: 1084px) {
+        &::before {
+          content: url("../../assets/img/vec1.svg");
+          position: absolute;
+          left: -115px;
+          top: -20%;
+        }
+        &::after {
+          content: url("../../assets/img/vec2.svg");
+          position: absolute;
+          right: -170px;
+          top: 50%;
+        }
+      }
+    }
+    &:nth-child(3) {
+      position: relative;
+      @media screen and (min-width: 1084px) {
+        &::before {
+          content: url("../../assets/img/vec3.svg");
+          position: absolute;
+          left: -185px;
+          top: 65%;
+        }
+      }
+    }
+    &:nth-child(4) {
+      position: relative;
+      @media screen and (min-width: 1084px) {
+        &::after {
+          content: url("../../assets/img/vec4.svg");
+          position: absolute;
+          right: -200px;
+          top: 35%;
+        }
+      }
+    }
+  }
+  &__text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 260px;
+    @media screen and (min-width: 768px) {
+      margin-top: 80px;
+      text-align: center;
+    }
+  }
+  &__left {
+    flex: 1 1 50%;
+    width: 50%;
+    &--img {
+      text-align: right;
+    }
+  }
+  &__right {
+    flex: 1 1 50%;
+    width: 50%;
+    &--img {
+      text-align: left;
+    }
+    &--text {
+      padding-left: 3rem;
+    }
+  }
+}
+
+.cities {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  &__state {
+    flex: 0 1 50%;
+    width: 25%;
+    margin-bottom: 1.5rem;
+    padding-right: 0.325rem;
+    @media screen and (min-width: 568px) {
+      flex: 0 1 33.33%;
+      width: 33.33%;
+    }
+    @media screen and (min-width: 768px) {
+      flex: 0 1 25%;
+      width: 25%;
+    }
+    h5 {
+      color: #2cb357;
+    }
+  }
+  &__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
