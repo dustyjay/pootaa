@@ -6,59 +6,6 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
-  cities: object[] = [
-    {
-      name: "Abia",
-      text: "14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text:
-        "14 Porters in Abia with 10 deliveries14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text:
-        "14 Porters in Abia with 10 deliveries14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text:
-        "14 Porters in Abia with 10 deliveries14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text: "14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text: "14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text: "14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text: "14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text: "14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text: "14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text: "14 Porters in Abia with 10 deliveries"
-    },
-    {
-      name: "Abia",
-      text: "14 Porters in Abia with 10 deliveries"
-    }
-  ];
   constructor() {}
 
   ngOnInit() {}

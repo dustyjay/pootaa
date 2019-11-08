@@ -1,0 +1,120 @@
+section {
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing {
+  text-align: center;
+  max-width: 1560px;
+  margin: 0 auto;
+
+  h1 {
+    font-weight: bolder;
+    line-height: 33rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: url("src/assets/img/contact-header.svg");
+      position: absolute;
+      bottom: 60%;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 80%;
+      background-size: contain;
+      @media screen and (min-width: 768px) {
+        bottom: 30%;
+      }
+    }
+  }
+}
+
+.touch {
+  text-align: center;
+  & > h4 {
+    margin-bottom: 2rem;
+  }
+  &__flex {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    // align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__div {
+    width: 100%;
+    flex: 1 1 100%;
+    padding: 2rem;
+    @media screen and (min-width: 768px) {
+      width: 33.33%;
+      flex: 1 1 33.33%;
+      border-right: 2px solid #2cb357;
+      &:last-child {
+        border-right: none;
+      }
+    }
+    img {
+      height: 40px;
+    }
+    h5 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.825rem;
+    }
+  }
+}
+
+.contact {
+  &-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    h4 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    input {
+      width: 48%;
+    }
+  }
+  &__message {
+    margin-bottom: 2rem;
+    textarea {
+      width: 100%;
+    }
+  }
+  &__btn {
+    text-align: center;
+    margin-bottom: 3rem;
+    button {
+      min-width: 10rem;
+    }
+  }
+  &__links {
+    max-width: 280px;
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    img {
+      width: 45px;
+    }
+  }
+}

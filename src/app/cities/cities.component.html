@@ -1,0 +1,15 @@
+<section>
+  <div class="cities__header">
+    <h4>Select city to hire a Pootaa</h4>
+    <p>Change to Available Cities.</p>
+    <p>
+      Total number of Pootaa's all over Nigeria is excellent.
+    </p>
+  </div>
+  <div class="cities">
+    <div class="cities__state" *ngFor="let city of cities">
+      <h5>{{ city.name }}</h5>
+      <p>{{ city.text }}</p>
+    </div>
+  </div>
+</section>

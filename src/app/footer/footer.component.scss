@@ -1,0 +1,39 @@
+.footer {
+  &-links {
+    max-width: 400px;
+    width: 85%;
+    margin: 10px auto 30px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.socials {
+  text-align: center;
+  &-links {
+    max-width: 180px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 0.825rem 2rem;
+  font-size: 0.825rem;
+  @media screen and (min-width: 768px) {
+    padding-right: 8rem;
+  }
+}

@@ -1,0 +1,52 @@
+section {
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing {
+  text-align: center;
+
+  h1 {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 700px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+
+  &__images {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      width: 100%;
+      &:first-child {
+        display: none;
+        @media screen and (min-width: 567px) {
+          display: unset;
+        }
+      }
+      @media screen and (min-width: 567px) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.layer {
+  margin-top: 2rem;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  p {
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 2.8rem;
+  }
+}
