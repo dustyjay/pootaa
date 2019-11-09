@@ -7,8 +7,14 @@
     Book Now for home/office pickup & Delivery Need Extra Cash? Become a Pootaa
   </p>
   <div class="btn-wrapper">
-    <button class="btn btn__primary">Hire a Pootaa</button
-    ><button class="btn btn__primary--outline">Become a Pootaa</button>
+    <button class="btn btn__primary" [routerLink]="['/hire-success']">
+      Hire a Pootaa</button
+    ><button
+      class="btn btn__primary--outline"
+      [routerLink]="['/auth/become-a-pootaa']"
+    >
+      Become a Pootaa
+    </button>
   </div>
   <div class="landing__images">
     <img src="assets/img/landing-woman.svg" alt="Woman delivering" />

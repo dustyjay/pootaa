@@ -5,10 +5,7 @@ import { Observable, of, BehaviorSubject } from "rxjs";
   providedIn: "root"
 })
 export class AuthTextService {
-  private messageSubject = new BehaviorSubject<string[]>([
-    "Default",
-    "Message"
-  ]);
+  private messageSubject = new BehaviorSubject<string[]>([]);
   public message: Observable<string[]> = this.messageSubject.asObservable();
 
   setAuthTitle(payload: string[]) {
