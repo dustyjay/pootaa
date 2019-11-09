@@ -1,0 +1,60 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  min-height: 100vh;
+  &__logo {
+    margin-bottom: 2.5rem;
+  }
+  form {
+    text-align: center;
+    min-width: 400px;
+    button {
+      min-width: 150px;
+    }
+  }
+  &__input {
+    input {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__div {
+    width: 85%;
+    max-width: 500px;
+  }
+  &__btn {
+    width: 25%;
+    background-color: transparent;
+    border: 2px solid #2cb357;
+    border-radius: 4px;
+    padding: 0.725rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      background-color: white;
+    }
+    img {
+      height: 2.125rem;
+    }
+    &--wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-left: 0.825rem;
+      padding-right: 0.825rem;
+    }
+  }
+  &__bottom {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 5rem;
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

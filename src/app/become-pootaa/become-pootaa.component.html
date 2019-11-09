@@ -1,1 +1,69 @@
-<p>become-pootaa works!</p>
+<section class="become">
+  <div class="become__logo">
+    <img src="assets/img/pootaa-color.svg" alt="Pootaa" />
+  </div>
+  <form>
+    <div class="become__input">
+      <div class="become__upload">
+        <input type="file" name="photo" />
+        <label for="photo" class="caution">+ Upload Photo</label>
+        <div class="caution become__caution">
+          <img src="assets/img/info.svg" alt="info" />Your face must be visible,
+          max size 1MB
+        </div>
+      </div>
+      <div class="become__upload">
+        <input type="file" name="id" />
+        <label for="id" class="caution">+ Upload ID</label>
+        <div class="caution become__caution">
+          <img src="assets/img/info.svg" alt="info" />Voter’s card, National
+          identity card, or driver’s license
+        </div>
+      </div>
+    </div>
+    <div class="become__input">
+      <input type="text" name="firstname" placeholder="First Name" />
+      <input type="text" name="lastname" placeholder="Last Name" />
+    </div>
+    <div class="become__input">
+      <select name="state">
+        <option value="1">Abia</option>
+        <option value="2">Adamawa</option>
+        <option value="3" selected>Lagos</option>
+        <option value="4">Kebbi</option>
+      </select>
+      <select name="lga">
+        <option value="1">Umuahia</option>
+        <option value="2">Yola</option>
+        <option value="3">Ikeja</option>
+        <option value="4">Birnin-Kebbi</option>
+      </select>
+    </div>
+    <div class="become__input">
+      <input type="text" name="address" placeholder="Address" />
+      <input type="text" name="busstop" placeholder="Nearest Busstop" />
+    </div>
+    <div class="become__input">
+      <input type="number" name="phone" placeholder="Phone Number 1" />
+      <input type="number" name="phone2" placeholder="Phone Number 2" />
+    </div>
+    <div class="become__input">
+      <input type="number" name="whatsapp" placeholder="Whatsapp Number" />
+      <input type="email" name="email" placeholder="Email Address" />
+    </div>
+    <div class="become__input">
+      <select name="banks">
+        <option value="1">Zenith Bank</option>
+        <option value="2">Access Bank</option>
+        <option value="3">UBA</option>
+        <option value="4" selected>GTBank</option>
+      </select>
+      <input type="text" name="account" placeholder="Account Number" />
+    </div>
+    <div class="become__sign-in">
+      <button class="btn btn__primary" [routerLink]="['/auth/login']">
+        Send
+      </button>
+    </div>
+  </form>
+</section>

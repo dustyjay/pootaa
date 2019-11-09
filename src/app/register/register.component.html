@@ -1,1 +1,42 @@
-<p>register works!</p>
+<section class="register">
+  <div class="register__logo">
+    <img src="assets/img/pootaa-color.svg" alt="Pootaa" />
+  </div>
+  <form>
+    <div class="register__input">
+      <input type="text" name="firstname" placeholder="First Name" />
+      <input type="text" name="lastname" placeholder="Last Name" />
+    </div>
+    <div class="register__input">
+      <input type="number" name="phone" placeholder="Phone Number" />
+      <input type="email" name="email" placeholder="Email Address" />
+    </div>
+    <div class="register__input">
+      <input type="text" name="state" placeholder="State of Origin" />
+      <input type="text" name="address" placeholder="Home Address" />
+    </div>
+    <div class="register__input">
+      <input type="password" name="password" placeholder="Password" />
+      <input type="password" name="password" placeholder="Confirm Password" />
+    </div>
+    <div class="register__sign-in">
+      <button class="btn btn__primary" [routerLink]="['/auth/login']">
+        Sign Up
+      </button>
+    </div>
+  </form>
+  <div class="register__bottom">
+    <p>Sign Up With</p>
+    <div class="register__btn--wrapper">
+      <button class=" register__btn">
+        <img src="assets/img/facebook.svg" alt="Facebook register" />
+      </button>
+      <button class=" register__btn">
+        <img src="assets/img/google.svg" alt="Google register" />
+      </button>
+      <button class=" register__btn">
+        <img src="assets/img/twitter.svg" alt="twitter register" />
+      </button>
+    </div>
+  </div>
+</section>

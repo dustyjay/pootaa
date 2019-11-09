@@ -5,6 +5,9 @@ import { AboutComponent } from "./about/about.component";
 import { ContactComponent } from "./contact/contact.component";
 import { AuthLayoutComponent } from "./auth-layout/auth-layout.component";
 import { LoginComponent } from "./login/login.component";
+import { RegisterComponent } from "./register/register.component";
+import { BecomePootaaComponent } from "./become-pootaa/become-pootaa.component";
+import { HireSuccessComponent } from "./hire-success/hire-success.component";
 
 const routes: Routes = [
   {
@@ -31,8 +34,24 @@ const routes: Routes = [
       {
         path: "login",
         component: LoginComponent
+      },
+      {
+        path: "register",
+        component: RegisterComponent
+      },
+      {
+        path: "become-a-pootaa",
+        component: BecomePootaaComponent
       }
     ]
+  },
+  {
+    path: "hire-success",
+    component: HireSuccessComponent
+  },
+  {
+    path: "*",
+    component: HomeComponent
   }
 ];
 

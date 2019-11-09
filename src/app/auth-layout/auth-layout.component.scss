@@ -1,0 +1,58 @@
+.auth {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  @media screen and (min-width: 768px) {
+    flex-flow: row wrap;
+  }
+  &-left {
+    flex: 1 0 100%;
+    width: 100%;
+    background: #2cb357;
+    color: white;
+    @media screen and (min-width: 768px) {
+      flex: 1 1 40%;
+      width: 40%;
+    }
+    hr {
+      width: 60px;
+      border-top-width: 5px;
+      border-radius: 6px;
+      border: 6px;
+      height: 6px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-color: white;
+      background: white;
+    }
+    & > div {
+      height: 50%;
+    }
+    &__text {
+      display: flex;
+      padding: 1.5rem;
+      flex-flow: column;
+      justify-content: center;
+    }
+    h3 {
+      max-width: 350px;
+    }
+    p {
+      max-width: 250px;
+    }
+  }
+  &-right {
+    flex: 1 0 100%;
+    width: 100%;
+    background-color: #f3f5f9;
+    @media screen and (min-width: 768px) {
+      flex: 1 0 60%;
+      width: 60%;
+    }
+  }
+  &__man {
+    background-image: url("src/assets/img/man.png");
+    background-size: cover;
+    background-position: center;
+  }
+}

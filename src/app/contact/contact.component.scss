@@ -86,12 +86,14 @@ section {
     margin-bottom: 2rem;
     input {
       width: 48%;
+      border: 1px solid #2cb357;
     }
   }
   &__message {
     margin-bottom: 2rem;
     textarea {
       width: 100%;
+      border: 1px solid #2cb357;
     }
   }
   &__btn {

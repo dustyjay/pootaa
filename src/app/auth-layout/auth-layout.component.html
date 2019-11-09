@@ -1,4 +1,14 @@
-<p>auth-layout works!</p>
-<app-login (title)="this.handleTitle($event)"> </app-login>
-{{ title || "This is a default message" }}
-<router-outlet></router-outlet>
+<div class="auth">
+  <div class="auth-left">
+    <div class="auth-left__text">
+      <h3>{{ title[0] || "header here" }}</h3>
+      <hr />
+      <p>{{ title[1] || "body here" }}</p>
+    </div>
+    <div class="auth__man"></div>
+  </div>
+  <div class="auth-right">
+    <router-outlet></router-outlet>
+    other
+  </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { AuthTextService } from "../auth-text.service";
 
 @Component({
   selector: "app-auth-layout",
@@ -6,13 +7,10 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./auth-layout.component.scss"]
 })
 export class AuthLayoutComponent implements OnInit {
-  title: string;
-  constructor() {}
+  title: string[];
+  constructor(private titleService: AuthTextService) {
+    this.titleService.message.subscribe(resp => (this.title = resp));
+  }
 
   ngOnInit() {}
-
-  handleTitle(title) {
-    console.log(title, " is title");
-    this.title = title;
-  }
 }

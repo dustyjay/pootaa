@@ -36,10 +36,18 @@ h5 {
 }
 
 input,
-textarea {
-  border: 1px solid $primary;
+textarea,
+select {
+  border: none;
   padding: 1rem 1.25rem;
   border-radius: 4px;
+  font-size: 1rem;
+}
+select {
+  background: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,9 +70,9 @@ section {
 
 .btn {
   background: white;
-  border: 2px solid;
+  border: 2px solid $text-color;
   border-radius: 4px;
-  padding: 1rem 2rem;
+  padding: 0.725rem 2rem;
   cursor: pointer;
   transition: all 200ms ease-in-out;
   font-size: 1rem;
@@ -77,13 +85,11 @@ section {
       #b3d744 85.48%,
       #c6de2c 100%
     );
-    border-color: transparent;
-    // border: none;
     color: $white;
+    border-color: #b3d744;
     &:hover {
       background: $white;
       color: $primary;
-      border: 2px solid;
       border-color: $primary;
     }
     &--outline {

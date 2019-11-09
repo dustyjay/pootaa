@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
+import { AuthTextService } from "../auth-text.service";
 
 @Component({
   selector: "app-login",
@@ -6,10 +7,12 @@ import { Component, OnInit, Output, EventEmitter } from "@angular/core";
   styleUrls: ["./login.component.scss"]
 })
 export class LoginComponent implements OnInit {
-  @Output() title: EventEmitter<string> = new EventEmitter();
-  constructor() {}
+  constructor(private titleService: AuthTextService) {}
 
   ngOnInit() {
-    this.title.emit("Login Title");
+    this.titleService.setAuthTitle([
+      "Moving Your Cargo Just Got Easier.",
+      "Come explore all the resources available for you for free"
+    ]);
   }
 }

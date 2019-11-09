@@ -1,1 +1,30 @@
-<p>login works!</p>
+<section class="login">
+  <div class="login__logo">
+    <img src="assets/img/pootaa-color.svg" alt="Pootaa" />
+  </div>
+  <form>
+    <div class="login__input">
+      <input type="email" name="email" placeholder="Email Address" />
+      <input type="password" name="password" placeholder="Password" />
+    </div>
+    <div class="login__sign-in">
+      <button class="btn btn__primary" [routerLink]="['/auth/register']">
+        Sign In
+      </button>
+    </div>
+  </form>
+  <div class="login__bottom">
+    <p>Sign In With</p>
+    <div class="login__btn--wrapper">
+      <button class=" login__btn">
+        <img src="assets/img/facebook.svg" alt="Facebook Login" />
+      </button>
+      <button class=" login__btn">
+        <img src="assets/img/google.svg" alt="Google Login" />
+      </button>
+      <button class=" login__btn">
+        <img src="assets/img/twitter.svg" alt="twitter Login" />
+      </button>
+    </div>
+  </div>
+</section>
