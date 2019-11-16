@@ -14,6 +14,8 @@ import { LoginComponent } from "./login/login.component";
 import { BecomePootaaComponent } from "./become-pootaa/become-pootaa.component";
 import { HireSuccessComponent } from "./hire-success/hire-success.component";
 import { HirePootaaComponent } from "./hire-pootaa/hire-pootaa.component";
+import { HeaderComponent } from './header/header.component';
+import { HeaderLayoutComponent } from './header-layout/header-layout.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { HirePootaaComponent } from "./hire-pootaa/hire-pootaa.component";
     LoginComponent,
     BecomePootaaComponent,
     HireSuccessComponent,
-    HirePootaaComponent
+    HirePootaaComponent,
+    HeaderComponent,
+    HeaderLayoutComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

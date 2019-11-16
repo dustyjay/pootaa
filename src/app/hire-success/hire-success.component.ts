@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { AuthTextService } from "../auth-text.service";
 
 @Component({
   selector: "app-hire-success",
@@ -6,8 +7,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./hire-success.component.scss"]
 })
 export class HireSuccessComponent implements OnInit {
-  private tempData: string = "This is data from the child thing";
-  constructor() {}
+  constructor(private colorService: AuthTextService) {
+    colorService.setHeaderColor("color");
+  }
 
   ngOnInit() {}
 }

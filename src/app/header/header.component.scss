@@ -1,0 +1,146 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  &-right {
+    &__ul {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+      }
+    }
+    &__item {
+      float: left;
+      margin-right: 6px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .btn {
+        padding: 0.725rem 3rem;
+      }
+    }
+    &__link {
+      padding: 0.725rem 2rem;
+      transition: all 200ms;
+      &:hover {
+        color: #2cb357;
+      }
+    }
+  }
+  &-left {
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+    }
+  }
+  &-burger {
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    svg {
+      width: 36px;
+      path {
+        color: #3d3d3d;
+      }
+    }
+  }
+  &.invert {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    .nav-left {
+      a {
+        color: white;
+      }
+    }
+    .nav-left {
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+    .nav-right__link {
+      color: white;
+      &:hover {
+        color: rgba($color: white, $alpha: 0.5);
+      }
+    }
+    .nav-burger {
+      path {
+        fill: white;
+      }
+    }
+  }
+  &-side {
+    position: fixed;
+    top: 0;
+    left: 200vw;
+    width: 0;
+    height: 100vh;
+    z-index: 100;
+    // transition: all 50ms linear;
+    &.show {
+      width: 100%;
+      left: 0;
+      .nav-side__section {
+        right: 0;
+      }
+    }
+    &__overlay {
+      background: rgba($color: #333, $alpha: 0.25);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+    }
+    &__section {
+      z-index: 2;
+      width: 85%;
+      height: 100%;
+      margin-left: auto;
+      background: white;
+      position: relative;
+      right: -200vw;
+      transition: all 400ms linear 50ms;
+    }
+    &__close {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    &__ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      flex-flow: column;
+    }
+    &__item {
+      display: block;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    &__link {
+      padding: 0.725rem 2rem;
+      transition: all 200ms;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}

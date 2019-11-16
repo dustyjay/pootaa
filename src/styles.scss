@@ -19,6 +19,11 @@ a {
   color: $text-color;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -68,6 +73,15 @@ section {
 .text-right {
   text-align: right;
 }
+
+// .active-link {
+//   color: $white;
+//   background: $primary;
+//   &:hover {
+//     color: $white !important;
+//     background: $primary !important;
+//   }
+// }
 
 .btn {
   background: white;
