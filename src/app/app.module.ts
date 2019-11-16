@@ -13,8 +13,7 @@ import { RegisterComponent } from "./register/register.component";
 import { LoginComponent } from "./login/login.component";
 import { BecomePootaaComponent } from "./become-pootaa/become-pootaa.component";
 import { HireSuccessComponent } from "./hire-success/hire-success.component";
-import { TestComponent } from "./test.component";
-import { HirePootaaComponent } from './hire-pootaa/hire-pootaa.component';
+import { HirePootaaComponent } from "./hire-pootaa/hire-pootaa.component";
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import { HirePootaaComponent } from './hire-pootaa/hire-pootaa.component';
     LoginComponent,
     BecomePootaaComponent,
     HireSuccessComponent,
-    TestComponent,
     HirePootaaComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
