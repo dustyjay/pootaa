@@ -8,11 +8,13 @@ import { FooterComponent } from "./footer/footer.component";
 import { AboutComponent } from "./about/about.component";
 import { CitiesComponent } from "./cities/cities.component";
 import { ContactComponent } from "./contact/contact.component";
-import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import { BecomePootaaComponent } from './become-pootaa/become-pootaa.component';
-import { HireSuccessComponent } from './hire-success/hire-success.component';
+import { AuthLayoutComponent } from "./auth-layout/auth-layout.component";
+import { RegisterComponent } from "./register/register.component";
+import { LoginComponent } from "./login/login.component";
+import { BecomePootaaComponent } from "./become-pootaa/become-pootaa.component";
+import { HireSuccessComponent } from "./hire-success/hire-success.component";
+import { TestComponent } from "./test.component";
+import { HirePootaaComponent } from './hire-pootaa/hire-pootaa.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { HireSuccessComponent } from './hire-success/hire-success.component';
     RegisterComponent,
     LoginComponent,
     BecomePootaaComponent,
-    HireSuccessComponent
+    HireSuccessComponent,
+    TestComponent,
+    HirePootaaComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

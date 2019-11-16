@@ -1,0 +1,153 @@
+.numbers {
+  &-box {
+    display: inline-flex;
+    align-items: center;
+    flex-flow: row wrap;
+    max-width: 500px;
+    width: 90%;
+  }
+  &__figure {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #2cb357;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    @media screen and (min-width: 768px) {
+      width: 50px;
+      height: 50px;
+      border-width: 5px;
+    }
+    &.active {
+      border-color: black;
+    }
+  }
+  &__line {
+    flex: 1 1 10%;
+    border-top: 2px solid #2cb357;
+    @media screen and (min-width: 768px) {
+      border-width: 5px;
+    }
+  }
+}
+
+.hire {
+  background-color: #f3f5f9;
+  min-height: 100vh;
+  &-header {
+    text-align: center;
+    h4 {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &-section {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    h5 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-weight: bold;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 90%;
+    margin: 0rem auto;
+    input {
+      flex: 1 0 100%;
+      width: 100%;
+      margin-bottom: 2rem;
+      @media screen and (min-width: 768px) {
+        flex: 0 1 30%;
+        width: 30%;
+      }
+    }
+    textarea {
+      width: 100%;
+      max-height: 130px;
+      min-width: 100%;
+    }
+    &__uploads {
+      max-width: 1100px;
+      width: 90%;
+      margin: 2rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      .hire-btn__add {
+        margin-top: -20px;
+      }
+    }
+    &__upload {
+      position: relative;
+      flex: 0 1 100px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      @media screen and (min-width: 568px) {
+        // width: 48%;
+        // flex: 0 1 20%;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        left: 0;
+        cursor: pointer;
+        opacity: 0;
+        padding: 0;
+        height: 100%;
+      }
+      label {
+        display: flex;
+        border: 1px dashed #2cb357;
+        padding: 2rem;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+  &__caution {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: left;
+    img {
+      margin-right: 6px;
+    }
+  }
+  &-btn {
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 1100px;
+    width: 90%;
+    button {
+      width: 100%;
+      max-width: 200px;
+    }
+    &__add {
+      text-align: unset;
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      button {
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+        line-height: 40px;
+        padding: 0;
+      }
+      span {
+        vertical-align: super;
+      }
+    }
+  }
+}

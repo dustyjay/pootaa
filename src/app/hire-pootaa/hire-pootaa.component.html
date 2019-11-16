@@ -1,0 +1,116 @@
+<div class="hire">
+    <section class="hire-header">
+        <div>
+            <img src="assets/img/pootaa-color.svg" alt="Pootaa" />
+        </div>
+        <h4>Hire a Porter</h4>
+        <div class="numbers-box">
+            <div class="numbers__figure" [class.active]="activeTab === 1">1</div>
+            <div class="numbers__line"></div>
+            <div class="numbers__figure" [class.active]="activeTab === 2">2</div>
+            <div class="numbers__line"></div>
+            <div class="numbers__figure" [class.active]="activeTab === 3">3</div>
+            <div class="numbers__line"></div>
+            <div class="numbers__figure" [class.active]="activeTab === 4">4</div>
+        </div>
+    </section>
+
+    <div *ngIf="activeTab === 1" class="hire-section">
+        <h5>Pick Up Address</h5>
+        <form>
+            <div class="hire-form">
+                <input type="text" name="pickup-address" placeholder="Pick Up Address" />
+                <input type="text" name="country" placeholder="Country" />
+                <input type="text" name="state" placeholder="State" />
+            </div>
+            <div class="hire-form">
+                <input type="text" name="lga" placeholder="LGA" />
+                <input type="text" name="street-address" placeholder="Street Address" />
+                <input type="text" name="busstop" placeholder="Nearest Busstop" />
+            </div>
+            <div class="hire-form">
+                <input type="text" name="best-date" placeholder="Best Date for Pickup" />
+                <input type="text" name="best-time" placeholder="Best Time for Pickup" />
+                <input type="number" name="phone" placeholder="Phone Number" />
+            </div>
+            <div class="hire-btn">
+                <button class="btn btn__primary" type="button" (click)="goToNextTab()">
+                    Next
+                </button>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="activeTab === 2" class="hire-section">
+        <h5>Delivery Address</h5>
+        <form>
+            <div class="hire-form">
+                <input type="text" name="country" placeholder="Country" />
+                <input type="text" name="state" placeholder="State" />
+                <input type="text" name="lga" placeholder="LGA" />
+            </div>
+            <div class="hire-form">
+                <input type="text" name="street-address" placeholder="Street Address" />
+                <input type="text" name="busstop" placeholder="Nearest Busstop" />
+                <input type="text" name="recipient-name" placeholder="Recipient Name" />
+            </div>
+            <div class="hire-form">
+                <input type="number" name="phone" placeholder="Recipient's Phone" />
+                <input type="text" name="best-date" placeholder="Best Date for Pickup" />
+                <input type="text" name="best-time" placeholder="Best Time for Pickup" />
+            </div>
+            <div class="hire-btn">
+                <button class="btn btn__primary" type="button" (click)="goToNextTab()">
+                    Next
+                </button>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="activeTab === 3" class="hire-section">
+        <h5>Items for shipping</h5>
+        <form>
+            <div class="hire-btn hire-btn__add">
+                <button class="btn btn__green">+</button>&nbsp;&nbsp;<span>Add Item</span>
+            </div>
+            <div class="hire-form">
+                <input type="text" name="item" placeholder="Item" />
+                <input type="number" name="quantity" placeholder="Quantity" />
+                <input type="number" name="cost" placeholder="Cost" />
+            </div>
+            <div class="hire-form">
+                <textarea name="instruction" rows="5"
+                    placeholder="Do you have any special instruction or value of shipment?"></textarea>
+            </div>
+            <div class="hire-form__uploads">
+                <div class="hire-form__upload">
+                    <input type="file" name="photo" />
+                    <label for="photo" class="caution">+ <br>Upload&nbsp;Item<br> Photos</label>
+                </div>
+                <div class="hire-form__upload">
+                    <input type="file" name="photo" />
+                    <label for="photo" class="caution">+ <br>Upload&nbsp;Item<br> Photos</label>
+                </div>
+                <div class="hire-btn__add">
+                    <button class="btn btn__green" type="button">+</button>&nbsp;&nbsp;<span>Add Photo</span>
+                </div>
+            </div>
+            <div class="hire-btn">
+                <button class="btn btn__primary" type="button" (click)="goToNextTab()">
+                    Next
+                </button>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="activeTab === 4" class="hire-section">
+        <h5>Delivery Address</h5>
+        <form>
+            <div class="hire-form">
+                Payment Integration
+            </div>
+            <div class="hire-btn">
+                <button class="btn btn__primary" type="button" (click)="goToNextTab()">
+                    Finish
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

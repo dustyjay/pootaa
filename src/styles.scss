@@ -111,6 +111,26 @@ section {
       }
     }
   }
+  &__green {
+    background-color: $primary;
+    color: $white;
+    border-color: $primary;
+    &:hover {
+      background: $white;
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+  &__transparent {
+    background-color: transparent;
+    // color: $white;
+    border-color: transparent;
+    &:hover {
+      background: transparent;
+      color: $primary;
+      border-color: $primary;
+    }
+  }
 }
 
 .copyright {

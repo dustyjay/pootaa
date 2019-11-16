@@ -8,6 +8,7 @@ import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
 import { BecomePootaaComponent } from "./become-pootaa/become-pootaa.component";
 import { HireSuccessComponent } from "./hire-success/hire-success.component";
+import { HirePootaaComponent } from "./hire-pootaa/hire-pootaa.component";
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
         component: BecomePootaaComponent
       }
     ]
+  },
+  {
+    path: "hire-a-pootaa",
+    component: HirePootaaComponent
   },
   {
     path: "hire-success",
