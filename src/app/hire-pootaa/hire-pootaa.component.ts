@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./hire-pootaa.component.scss"]
 })
 export class HirePootaaComponent implements OnInit {
-  activeTab: number = 3;
+  activeTab: number = 1;
   items: object[] = [];
   goToNextTab() {
     if (this.activeTab < 4) {
