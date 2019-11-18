@@ -16,6 +16,8 @@ import { HireSuccessComponent } from "./hire-success/hire-success.component";
 import { HirePootaaComponent } from "./hire-pootaa/hire-pootaa.component";
 import { HeaderComponent } from './header/header.component';
 import { HeaderLayoutComponent } from './header-layout/header-layout.component';
+import { PackageCardsComponent } from './package-cards/package-cards.component';
+import { PackageListingsComponent } from './package-listings/package-listings.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { HeaderLayoutComponent } from './header-layout/header-layout.component';
     HireSuccessComponent,
     HirePootaaComponent,
     HeaderComponent,
-    HeaderLayoutComponent
+    HeaderLayoutComponent,
+    PackageCardsComponent,
+    PackageListingsComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

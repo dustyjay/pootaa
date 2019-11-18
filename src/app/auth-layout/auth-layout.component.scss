@@ -6,7 +6,6 @@
     flex-flow: row wrap;
   }
   &-left {
-    flex: 1 0 100%;
     width: 100%;
     background: #2cb357;
     color: white;
@@ -42,12 +41,20 @@
     }
   }
   &-right {
-    flex: 1 0 100%;
+    // display: flex;
+    align-items: center;
     width: 100%;
     background-color: #f3f5f9;
+    justify-content: center;
+    height: 100%;
+    flex: 1 1 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     @media screen and (min-width: 768px) {
       flex: 1 0 60%;
       width: 60%;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
   &__man {

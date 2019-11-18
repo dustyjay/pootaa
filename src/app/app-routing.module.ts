@@ -9,6 +9,7 @@ import { RegisterComponent } from "./register/register.component";
 import { BecomePootaaComponent } from "./become-pootaa/become-pootaa.component";
 import { HireSuccessComponent } from "./hire-success/hire-success.component";
 import { HirePootaaComponent } from "./hire-pootaa/hire-pootaa.component";
+import { PackageListingsComponent } from "./package-listings/package-listings.component";
 
 const routes: Routes = [
   {
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: "hire-success",
     component: HireSuccessComponent
+  },
+  {
+    path: "listings",
+    component: PackageListingsComponent
   },
   {
     path: "*",

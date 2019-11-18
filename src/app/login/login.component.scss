@@ -3,13 +3,16 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  min-height: 100vh;
+  min-height: unset;
+  @media screen and (min-width: 768px) {
+    min-height: 100vh;
+  }
   &__logo {
     margin-bottom: 2.5rem;
   }
   form {
     text-align: center;
-    min-width: 400px;
+    // min-width: 400px;
     button {
       min-width: 150px;
     }

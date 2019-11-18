@@ -1,0 +1,21 @@
+section {
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing {
+  text-align: center;
+  h1 {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 700px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+}

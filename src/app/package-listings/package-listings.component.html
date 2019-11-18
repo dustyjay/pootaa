@@ -1,0 +1,16 @@
+<app-layout>
+    <section class="landing">
+        <h1>
+            Package Listings
+        </h1>
+        <p>
+            Montior your packages and get relevant information and also delivery status of you packages, lorem ipsum
+            dolor sit amet,
+            consectetur adipiscing elit
+        </p>
+    </section>
+
+    <app-package-cards *ngFor="let i of arr;let j = index">
+        {{i}}, {{j}}
+    </app-package-cards>
+</app-layout>

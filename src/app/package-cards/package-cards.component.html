@@ -1,0 +1,109 @@
+<div class="package" *ngIf="role === 'user'; else porter">
+    <div class="package-box">
+        <img src="assets/img/pootaa-package.svg" alt="Package">
+    </div>
+    <div class="package-info">
+        <div class="package-info__flex">
+            <div class="package-info__data">
+                <p>Package ID</p>
+                <h5>24XN3U2873290JD</h5>
+            </div>
+            <div class="package-info__data">
+                <p>Date</p>
+                <h5>22/01/2018</h5>
+            </div>
+        </div>
+        <div class="package-info__flex">
+            <div class="package-info__data">
+                <p>Items</p>
+                <h5>3</h5>
+            </div>
+            <div class="package-info__data">
+                <p>Tracking</p>
+                <h5>WF483FB</h5>
+            </div>
+        </div>
+        <div class="package-info__flex">
+            <div class="package-info__data">
+                <p>Total Price</p>
+                <h5>N23,953</h5>
+            </div>
+            <div class="package-info__data">
+                <p>Porter No</p>
+                <h5>07082058276</h5>
+            </div>
+        </div>
+        <div class="package-info__flex">
+            <div class="package-info__data">
+                <p>Destination State</p>
+                <h5>Enugu</h5>
+            </div>
+            <div class="package-info__data">
+                <p>Destination Status</p>
+                <h5>
+                    <div class="package-info__dot"></div>Pending
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="package-review">
+        <div><img src="assets/img/write-review.svg" alt="Review"></div>
+        <p>Write a Review</p>
+    </div>
+</div>
+
+<ng-template #porter>
+    <div class="package">
+        <div class="package-box">
+            <img src="assets/img/pootaa-package.svg" alt="Package">
+        </div>
+        <div class="package-info">
+            <div class="package-info__flex">
+                <div class="package-info__data">
+                    <p>Package ID</p>
+                    <h5>24XN3U2873290JD</h5>
+                </div>
+                <div class="package-info__data">
+                    <p>Date</p>
+                    <h5>22/01/2018</h5>
+                </div>
+            </div>
+            <div class="package-info__flex">
+                <div class="package-info__data">
+                    <p>Items</p>
+                    <h5>3</h5>
+                </div>
+                <div class="package-info__data">
+                    <p>Tracking</p>
+                    <h5>WF483FB</h5>
+                </div>
+            </div>
+            <div class="package-info__flex">
+                <div class="package-info__data">
+                    <p>Sender No.</p>
+                    <h5>09063719038</h5>
+                </div>
+                <div class="package-info__data">
+                    <p>Porter No</p>
+                    <h5>07082058276</h5>
+                </div>
+            </div>
+            <div class="package-info__flex">
+                <div class="package-info__data">
+                    <p>Destination State</p>
+                    <h5>Enugu</h5>
+                </div>
+                <div class="package-info__data">
+                    <p>Special Instruction</p>
+                    <h5 class="package-info__data--truncate" title="GIve it to Musa when you get to the gate">
+                        GIve it to Musa when you get to the gate
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="package-review">
+            <div><img src="assets/img/write-review.svg" alt="Review"></div>
+            <p>Write a Review</p>
+        </div>
+    </div>
+</ng-template>
